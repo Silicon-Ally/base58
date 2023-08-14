@@ -42,9 +42,7 @@ func Encode(src []byte) string {
 func Decode(src string) ([]byte, bool) {
 	dat := []byte(src)
 	nZeroes := bytes.IndexFunc(dat, func(r rune) bool { return r != '1' })
-	if nZeroes != -1 {
-		src = src[nZeroes:]
-	} else {
+	if nZeroes == -1 {
 		nZeroes = len(src)
 	}
 	srcInt := new(big.Int)

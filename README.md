@@ -1,6 +1,6 @@
 # base58
 
-_Note: While a variant of base58 is used in Bitcoin and parts of this take inspiration from [that C++ implementation](https://github.com/bitcoin/bitcoin/blob/15db77f4dd7f1a7963398f1576580b577a1697bc/src/base58.cpp), this package has nothing to do with cryptocurrency._
+_Note: While a variant of base58 is used in Bitcoin and parts of this library take inspiration from [that C++ implementation](https://github.com/bitcoin/bitcoin/blob/15db77f4dd7f1a7963398f1576580b577a1697bc/src/base58.cpp), this package has nothing to do with cryptocurrency._
 
 [![GoDoc](https://pkg.go.dev/badge/github.com/Silicon-Ally/base58?status.svg)](https://pkg.go.dev/github.com/Silicon-Ally/base58?tab=doc)
 [![CI Workflow](https://github.com/Silicon-Ally/base58/actions/workflows/test.yml/badge.svg)](https://github.com/Silicon-Ally/base58/actions?query=branch%3Amain)

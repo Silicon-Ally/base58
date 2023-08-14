@@ -8,7 +8,7 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"log"
 	"os"
 
@@ -37,7 +37,7 @@ func run(args []string) error {
 	switch n := fs.NArg(); n {
 	case 0:
 		// Read from stdin
-		if src, err = ioutil.ReadAll(os.Stdin); err != nil {
+		if src, err = io.ReadAll(os.Stdin); err != nil {
 			return fmt.Errorf("failed to read from stdin: %w", err)
 		}
 	case 1:
